@@ -1,0 +1,59 @@
+Here are test cases for Functionality #13: Verify whether a student is registered or not in a Student Verification System.
+
+##Test Case 1: Valid Student – Ayanda Hlongwane
+
+Input : Student ID = 223144086, Name = Ayanda Hlongwane
+Expected Result : Student is registered.
+Outcome : Pass/Fail
+
+##Test Case 2: Valid Student – Sipho Mahlangu
+
+Input : Student ID = 223811333, Name = Sipho Mahlangu
+Expected Result : Student is registered.
+Outcome: Pass/Fail
+
+##Test Case 3: Valid Student – Lerato Sithole
+
+Input : Student ID = 225124611, Name = Lerato Sithole
+Expected Result : Student is registered.
+Outcome : Pass/Fail
+
+##Test Case 4: Invalid Student ID
+
+Input : Student ID = 999999999, Name = Unknown Student
+Expected Result : Student is not registered.
+Outcome : Pass/Fail
+
+##Test Case 5: Typo in Name
+
+Input : Student ID = 223811333, Name = Sipho Mahlanga
+Expected Result : Student is not registered. (Assumes exact match is required)
+Outcome : Pass/Fail
+
+##Test Case 6: ID Exists but Name Mismatch
+
+Input : Student ID = 223144086, Name = John Doe
+Expected Result : Student is not registered.
+Outcome : Pass/Fail
+
+##Test Case 7: Name Exists with Different ID
+
+Input: Student ID = 123456789, Name = Lerato Sithole
+Expected Result : Student is not registered.
+Outcome : Pass/Fail
+
+##Test Case 8: Empty Input
+
+Input : Student ID =  , Name =  
+Expected Result : Error or prompt for input.
+Outcome : Pass/Fail
+
+Test Case 9: Null Values
+Input : Student ID = null, Name = null
+Expected Result : Error or prompt for input.
+Outcome : Pass/Fail
+
+Test Case 10: Valid ID with Case-Sensitive Name Check
+Input : Student ID = 225124611, Name = lerato sithole
+Expected Result : Depends on system — likely "not registered" if case-sensitive.
+Outcome : Pass/Fail
